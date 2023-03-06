@@ -1,0 +1,112 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #ccc;
+	padding: 20px;
+	position: relative;
+    width: 250px;
+    margin: auto;
+}
+
+.product-card:hover .views {
+	opacity: 1;
+}
+
+.product-card:hover .description-icon {
+	background-color: #007bff;
+	color: #fff;
+}
+
+.views {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: #000;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.description-icon {
+	position: absolute;
+	bottom: 10px;
+	right: 25px;
+	background-color: #fff;
+	color: #007bff;
+	padding: 10px;
+    padding-right: 10px;
+	border-radius: 50%;
+	font-size: 16px;
+	cursor: pointer;
+    width: 5px;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.description {
+	display: none;
+	position: absolute;
+	bottom: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	font-size: 12px;
+	z-index: 1;
+}
+
+.product-card:hover .description {
+	display: block;
+}
+
+  /* Internal style sheet */
+  /* <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    p {
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    i {
+      margin-right: 5px;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .product-card {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  </style> */
+  
+  /* Inline style */
+  /* <div style="background-color: #007bff; color: #fff; padding: 10px; text-align: center;">
+      <h2>Get 10% off on your first purchase!</h2>
+      <p>Use code FIRST10 at checkout.</p>
+  </div> */
+  
